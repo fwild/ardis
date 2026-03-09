@@ -1,3 +1,7 @@
+# YOLO models
+
+yolov8x-worldv2.pt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -138,7 +142,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-env.sh
 .env
 .envrc
 .venv
@@ -209,3 +212,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+ardis-1/*

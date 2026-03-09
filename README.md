@@ -18,10 +18,10 @@ the You-Only-Look-Once (YOLO) computer vison models.
 
 # Configuration
 
-This project uses environment variables for configuration. Create a `env.sh` file in the project root:
+This project uses environment variables for configuration. Create a `.env` file in the project root:
 
 ```
-export ROBOFLOW_API_KEY=your_api_key_here
+ROBOFLOW_API_KEY=your_api_key_here
 ```
 
 # Run
@@ -29,7 +29,6 @@ export ROBOFLOW_API_KEY=your_api_key_here
 Run the main application:
 
 ``` bash
-./env.sh
 python ardis.py
 ```
 

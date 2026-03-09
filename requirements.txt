@@ -1,8 +1,6 @@
 roboflow
-opencv-python ~= 4.8.0.76
-inference ~= 0.9.20
-# inference-gpu ~= 0.9.20
+opencv-python ~= 4.13.0.92
+#inference ~= #0.9.20
 openai-clip ~= 1.0.1
-ultralytics ~= 8.1.42
-supervision ~= 0.19.0
-
+ultralytics ~= 8.4.21
+supervision ~= 0.27.0

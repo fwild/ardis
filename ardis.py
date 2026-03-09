@@ -1,19 +1,25 @@
 from roboflow import Roboflow
-import inference
+#import inference
 import cv2
 import supervision as sv
 from ultralytics import YOLO
 from ultralytics import YOLOWorld
 import os
-from inference.models.utils import get_model
+#from inference.models.utils import get_model
 from PIL import Image
+import os
+from dotenv import load_dotenv
+
+# import .env file
+load_dotenv(override=True)
+rfapikey = os.getenv('ROBOFLOW_API_KEY')
 
 
 # YOLO world model example
-
 model = YOLOWorld('yolov8x-worldv2.pt')
 model.set_classes(['milk','butter','plate','knife','spoon','orange juice','glass','table','chair','croissant','bun','bread','cheese','meat','egg','mug','coffee','cup'])
 
+# predictions
 directory = './breakfast/'
 for f in os.listdir(directory):
     if (f.endswith('.jpg') or f.endswith('.jpeg')):
@@ -21,10 +27,7 @@ for f in os.listdir(directory):
        results[0].save('./predictions/'+f)
 
 # Roboflow trained model
-
-# add roboflow API key here
-rfapikey = ''
-
+rfapikey = os.environ['ROBOFLOW_API_KEY'] 
 rf = Roboflow(api_key=rfapikey)
 
 # change workspace and project name to what you created 
