@@ -11,56 +11,20 @@ the You-Only-Look-Once (YOLO) computer vison models.
 
 # Installation
 
-## 1. Clone the Repository
+1. Clone the Repository
+2. Create a Python Virtual Environment `python -m venv .venv`
+3. Activate the Environment `source .venv/bin/activate` (mac, linux), `.venv\Scripts\activate` (windows)
+4. Install Dependencies `pip install -r requirements.txt`
 
-``` bash
-git clone https://github.com/fwild/ardis.git 
-cd ardis
-```
+# Configuration
 
-## 2. Create a Python Virtual Environment
-
-``` bash
-python -m venv .venv
-```
-
-## 3. Activate the Environment
-
-### macOS / Linux
-
-``` bash
-source .venv/bin/activate
-```
-
-### Windows (PowerShell)
-
-``` powershell
-.venv\Scripts\Activate.ps1
-```
-
-### Windows (Command Prompt)
-
-``` cmd
-.venv\Scripts\activate
-```
-
-## 4. Install Dependencies
-
-``` bash
-pip install -r requirements.txt
-```
-
-# Environment Variables
-
-This project uses environment variables for configuration.
-
-Create a `env.sh` file in the project root:
+This project uses environment variables for configuration. Create a `env.sh` file in the project root:
 
 ```
 export ROBOFLOW_API_KEY=your_api_key_here
 ```
 
-# Running the Project
+# Run
 
 Run the main application:
 
