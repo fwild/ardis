@@ -30,6 +30,6 @@ Run the main application:
 
 ``` bash
 ./env.sh
-python main.py
+python ardis.py
 ```
 
